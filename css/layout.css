@@ -1,0 +1,88 @@
+@charset "UTF-8";
+/**
+ * layout.css
+ *
+ * レイアウト用CSS
+ */
+
+#Wrap {
+	width:300px;
+	margin:0 auto;
+	padding-top:300px;
+	padding-bottom:300px;
+	border-left:1px solid #333;
+	border-right:1px solid #333;
+}
+.contents {
+	position:relative;
+	overflow:hidden;
+	width:300px;
+	height:100px;
+
+}
+
+.contents-inner {
+	position:absolute;
+	left:0;
+
+}
+
+.box {
+	width:100px;
+	height:100px;
+	float:left;
+}
+
+.color-red {
+	background:#F00;
+}
+
+.color-blue {
+	background:#00F;
+}
+
+.color-green {
+	background:#0F0;
+}
+.color-pink {
+	background:#F0F;
+}
+
+
+
+.btn {
+	float:left;
+	width:48px;
+	height:48px;
+	border:#63F 2px solid;
+	margin:30px 30px 0 50px;
+	font-size:34px;
+}
+
+
+/* Header
+----------------------------------------------- */
+#Header{
+}
+#HeaderInner {
+}
+#HeaderLogo{
+}
+
+/* TopicPath
+----------------------------------------------- */
+
+/* Contents Common
+----------------------------------------------- */
+#ContentsBody {
+}
+
+
+/* Footer
+----------------------------------------------- */
+#Footer {
+}
+#FooterInner{
+}
+/* 共通
+----------------------------------------------- */

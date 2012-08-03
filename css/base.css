@@ -1,0 +1,920 @@
+@charset "UTF-8";
+/**
+ * base.css
+ * 
+ * タグのベース設定
+ */
+
+/* Body
+----------------------------------------------- */
+body {
+	color:#333;
+	font-size:0.85em;
+	line-height: 1.3;
+	background-color:#FFF;
+}
+
+table th,
+table td {
+	 border-collapse: collapse; 
+	 border-spacing: 0; 
+}
+
+/* 見出し
+----------------------------------------------- */
+h1,h2,h3,h4,h5,h6,h7 {
+    font-size:100%;
+    font-weight:normal;
+}
+
+/* Hyper Text
+----------------------------------------------- */
+a {
+	outline-color:invert;
+	outline-style:none;
+	outline-width:medium;
+}
+a:link {
+	color:#F03;
+	text-decoration: underline;
+}
+a:visited {
+/*	color:#551A8B; */
+/*	color:#802080; */
+/*	color:#803080; */
+	/*color:#800080;*/
+	/*text-decoration: none;*/
+}
+a:hover,
+a:active {
+	color:#403F99;
+	text-decoration: none;
+}
+
+/* Text
+----------------------------------------------- */
+small {
+	color:#333;
+}
+.underline {
+	text-decoration: underline;
+}
+.indent {
+	text-indent: 1em;
+}
+
+/* img
+----------------------------------------------- */
+img{
+	margin:0;
+	padding:0;
+	border:none;
+}
+.caption {
+	display: block;
+	padding-top: 7px;
+}
+
+/* Line Setting
+----------------------------------------------- */
+.no-border {
+	border-top-style: none !important;
+	border-right-style: none !important;
+	border-bottom-style: none !important;
+	border-left-style: none !important;
+}
+.line-dotted {
+	border-bottom-width: 1px;
+	border-bottom-style: dotted;
+	border-bottom-color: #999;
+}
+.line-solid {
+	border: 1px solid #BBB;
+}
+
+.box-outer {
+	padding: 1px;
+	background-color: #BBB;
+	margin-bottom: 30px;
+}
+
+/* Position
+----------------------------------------------- */
+.position-absolute {
+	position: absolute;
+}
+.position-relative {
+	position: relative;
+}
+
+/* List Style
+----------------------------------------------- */
+ol ol {
+	margin-top:10px;
+	margin-bottom:10px;
+}
+ol ol li {
+	list-style-type:lower-alpha;
+}
+
+ol.list-number-style li {
+	list-style-type: decimal !important;
+}
+
+ul.list-disc-style li {
+	list-style-type: disc;
+	background-image: none !important;
+	margin-left: 0px !important;
+	padding-left: 0px !important;
+}
+div.list-disc-style {
+}
+div.list-disc-style ul {
+	margin-left: 30px;
+}
+div.list-disc-style ul li {
+	list-style-type: disc;
+	background-image: none;
+	margin-left: 0px;
+	padding-left: 0px;
+}
+
+div.list-upper-roman-style {
+}
+div.list-upper-roman-style ol {
+}
+div.list-upper-roman-style ol li {
+	list-style-type: upper-roman;
+}
+
+div.list-lower-roman-style {
+}
+div.list-lower-roman-style ol {
+}
+div.list-lower-roman-style ol li {
+	list-style-type: lower-roman;
+}
+
+ol.list-lower-alpha-style {
+	list-style-type: lower-alpha;
+}
+div.list-lower-alpha-style {
+}
+div.list-lower-alpha-style ol {
+}
+div.list-lower-alpha-style ol li {
+	list-style-type: lower-alpha;
+}
+
+ol.list-upper-alpha-style {
+	list-style-type: upper-alpha;
+}
+div.list-upper-alpha-style {
+}
+div.list-upper-alpha-style ol {
+}
+div.list-upper-alpha-style ol li {
+	list-style-type: upper-alpha;
+}
+
+.nolist-style {
+}
+ul.nolist-style li {
+	background-image: none !important;
+	list-style-type: none;
+	margin-bottom: 3px;
+	padding-bottom: 0px;
+}
+div.nolist-style ul {
+	margin-left: 5px;
+	padding-left: 0px;
+}
+div.nolist-style ul li {
+	background-image: none !important;
+	list-style-type: none;
+	margin-bottom: 3px;
+	padding-bottom: 0px;
+}
+ol.nolist-style li {
+	background-image: none !important;
+	list-style-type: none;
+	margin-bottom: 3px;
+	padding-bottom: 0px;
+}
+
+div.inline-menu {
+	clear: both;
+	margin-bottom: 30px;
+	margin-top: 20px;
+}
+div.inline-menu ul {
+}
+div.inline-menu ul li {
+	display: inline;
+	background-image: none;
+	white-space: nowrap;
+}
+div.inline-menu ul li a {
+	background-image: url(../img/blt_arrow_under.gif);
+	background-repeat: no-repeat;
+	background-position: left center;
+	padding-left: 12px;
+	color: #1D3994;
+}
+
+dl.inline-menu dt {
+	float: left;
+	width: 2.4em;
+	font-weight: normal !important;
+}
+dl.inline-menu dd {
+	margin-left: 2.4em;
+	text-align: left;
+}
+
+div.inline-menu2 {
+        clear: both;
+        margin-bottom: 30px;
+        margin-top: 20px;
+}
+div.inline-menu2 ul {
+	font-size: 12px;
+}
+div.inline-menu2 ul li {
+	float: left;
+        background-image: none;
+	width:220px;
+	line-height: 15px;
+}
+div.inline-menu2 ul li a {
+        background-image: url(../img/blt_arrow_under.gif);
+        background-repeat: no-repeat;
+        background-position: left center;
+        display: block;
+        padding-left: 12px;
+        color: #1D3994;
+	width:220px;
+}
+
+dl.inline-menu2 dt {
+        float: left;
+        width: 2.4em;
+        font-weight: normal !important;
+}
+dl.inline-menu2 dd {
+        margin-left: 2.4em;
+        text-align: left;
+}
+
+/* Unique
+----------------------------------------------- */
+iframe {
+	border:1px solid #CCC;
+}
+
+/* 中央寄せボックス
+---------------------------------------------------*/
+.box-center {
+	margin-right: auto;
+	margin-left: auto;
+}
+
+/* 背景色付きボックス
+---------------------------------------------------*/
+div.box-color01 {
+	clear: both;
+	margin-bottom: 30px;
+}
+div.box-color01 .inner {
+	border: 1px solid #CCC;
+	background-color: #F2F2F2;
+	padding-top: 17px;
+	padding-right: 17px;
+	padding-bottom: 15px;
+	padding-left: 20px;
+}
+div.box-color01 .inner .body {
+	border-bottom-width: 1px;
+	border-bottom-style: dotted;
+	border-bottom-color: #999;
+	margin-bottom: 25px;
+	clear: both;
+}
+div.box-color01 h3 {
+	background-image: none;
+	padding-left: 0px;
+}
+div.box-color01 p {
+}
+
+div.box-color02 {
+	clear: both;
+	margin-bottom: 30px;
+}
+div.box-color02 .inner {
+	background-color: #F2F2F2;
+	padding-top: 17px;
+	padding-right: 17px;
+	padding-bottom: 5px;
+	padding-left: 20px;
+}
+div.box-color02 h2 {
+	border-bottom-width: 1px;
+	border-bottom-style: dotted;
+	border-bottom-color: #CCC;
+	background-image: none;
+	padding-left: 0px;
+	margin-bottom: 10px;
+	font-size: 18px;
+}
+div.box-color02 h3 {
+}
+div.box-color02 p {
+	margin-left: 16px;
+	margin-bottom: 20px;
+}
+
+div.box-color03 {
+	clear: both;
+}
+div.box-color03 .inner {
+	border: 1px solid #CCC;
+	background-color: #F6F6F6;
+	padding-top: 17px;
+	padding-right: 17px;
+	padding-bottom: 15px;
+	padding-left: 20px;
+}
+
+div.box-title-blue {
+	/* [disabled]border: 1px solid #CCC; */
+	clear: both;
+	padding: 1px;
+	background-color: #CCC;
+	margin-bottom: 30px;
+}
+div.box-title-blue .inner {
+	padding-top: 20px;
+	padding-right: 25px;
+	padding-bottom: 20px;
+	padding-left: 25px;
+	background-color: #FFF;
+}
+div.box-title-blue h2 {
+	background-color: #BBDEEF;
+	border-top-style: none;
+	border-right-style: none;
+	border-bottom-style: none;
+	border-left-style: none;
+	background-image: none;
+	padding-top: 7px;
+	padding-right: 20px;
+	padding-bottom: 7px;
+	padding-left: 20px;
+}
+div.box-title-blue p {
+	margin-bottom: 0px;
+}
+
+/* Adobe Readerへの案内
+----------------------------------------------- */
+.box-tolink {
+	border: 1px solid #CCC;
+	padding-top: 10px;
+	padding-right: 15px;
+	padding-bottom: 10px;
+	padding-left: 15px;
+}
+.box-tolink p {
+	margin: 0px;
+}
+
+/* Color Settings
+----------------------------------------------- */
+.lightblue {
+	color: #1D98D4;
+}
+.lightblue2 {
+	color: #218cc3!important;
+}
+.lightpink {
+	color: #EA339F;
+}
+.lightpink2 {
+	color: #CD3568;
+}
+.lightgreen2 {
+	color: #A7D41D;
+}
+.lightglay {
+	color: #666666;
+}
+.lightpurple {
+	color: #8342A8;
+}
+.lightblue2 {
+	color: #073E8A;
+}
+.lightorange {
+	color: #F96;
+}
+.lightyellow {
+	color: #FC0;
+}
+
+.color-red {
+	color: #C30;
+}
+.color-black {
+	color: #333;
+}
+.color-purple {
+	color: #660066;
+}
+.color-redpink {
+	color: #D5072C;
+}
+.color-white {
+	color: #FFF;
+}
+.color-darkblue {
+	color: #004076;
+}
+.color-darkpurple {
+	color: #256BC1;
+}
+.color-lightblue {
+	color: #1D98D4;
+}
+.color-glay {
+	color: #666666;
+}
+.color-green {
+	color: #44B149;
+}
+
+/* Margin Settings
+----------------------------------------------- */
+.margin-t0 {
+	margin-top: 0px;
+}
+.margin-t10 {
+	margin-top: 10px;
+}
+.margin-t15 {
+	margin-top: 15px;
+}
+.margin-t20 {
+	margin-top: 20px;
+}
+.margin-t25 {
+	margin-top: 25px;
+}
+.margin-t30 {
+	margin-top: 30px;
+}
+.margin-t35 {
+	margin-top: 35px;
+}
+.margin-t40 {
+	margin-top: 40px;
+}
+
+.margin-r0 {
+	margin-right: 0px;
+}
+.margin-r10 {
+	margin-right: 10px;
+}
+.margin-r15 {
+	margin-right: 15px;
+}
+.margin-r20 {
+	margin-right: 20px;
+}
+.margin-r25 {
+	margin-right: 25px;
+}
+.margin-r30 {
+	margin-right: 30px;
+}
+.margin-r35 {
+	margin-right: 35px;
+}
+.margin-r40 {
+	margin-right: 40px;
+}
+
+.margin-b0 {
+	margin-bottom: 0px !important;
+}
+.margin-b5 {
+	margin-bottom: 5px;
+}
+.margin-b10 {
+	margin-bottom: 10px;
+}
+.margin-b15 {
+	margin-bottom: 15px;
+}
+.margin-b20 {
+	margin-bottom: 20px;
+}
+.margin-b25 {
+	margin-bottom: 25px;
+}
+.margin-b30 {
+	margin-bottom: 30px;
+}
+.margin-b35 {
+	margin-bottom: 35px;
+}
+.margin-b40 {
+	margin-bottom: 40px;
+}
+.margin-b45 {
+	margin-bottom: 45px;
+}
+.margin-b50 {
+	margin-bottom: 50px;
+}
+
+.margin-l0 {
+	margin-left: 0px;
+}
+.margin-l5 {
+	margin-left: 5px;
+}
+
+.margin-l10 {
+	margin-left: 10px;
+}
+.margin-l15 {
+	margin-left: 15px;
+}
+.margin-l20 {
+	margin-left: 20px;
+}
+.margin-l25 {
+	margin-left: 25px;
+}
+.margin-l30 {
+	margin-left: 30px;
+}
+.margin-l35 {
+	margin-left: 35px;
+}
+.margin-l40 {
+	margin-left: 40px;
+}
+
+/* Color Settings BackGround
+----------------------------------------------- */
+.bg-lightgreen {
+	background-color: #ECF7FC;
+}
+.bg-yellow {
+	background-color: #FF9;
+}
+.bg-darkblue {
+	background-color: #1D98D4 !important;
+}
+
+/* Width Settings
+----------------------------------------------- */
+.width146 {
+	width: 146px;
+}
+.width170 {
+	width: 170px;
+}
+.width180 {
+	width: 180px;
+}
+.width190 {
+	width: 190px;
+}
+.width200 {
+	width: 200px;
+}
+.width270 {
+	width: 270px;
+}
+.width300 {
+	width: 300px !important;
+}
+.width340 {
+	width: 340px !important;
+}
+.width350 {
+	width: 350px;
+}
+.width360 {
+	width: 360px;
+}
+.width370 {
+	width: 370px;
+}
+.width440 {
+	width: 440px;
+}
+.width450 {
+	width: 450px;
+}
+.width540 {
+	width: 540px;
+}
+
+/* Height Settings
+----------------------------------------------- */
+
+/* class
+----------------------------------------------- */
+.block {
+	display: block;
+}
+.paragraph {
+	margin-bottom: 30px;
+}
+.taterange {
+	vertical-align: middle;
+}
+.hints {
+	font-size: small;
+}
+.attention {
+	font-size:18px;
+	color: #C00;
+	font-weight: bold;
+	padding: 10px;
+	border: 3px solid #C00;
+	margin-bottom:30px;
+	clear: both;
+}
+ul.comment {
+	font-size:x-small;
+	margin-left:20px;
+	margin-right:20px;
+}
+ul.comment li{
+	background:url(../img/blt_comment.gif) no-repeat left 3px!important;
+}
+/* class : Link Style
+----------------------------------------------- */
+.blank-link {
+	padding: 5px 0px 5px 17px;
+	background-color: transparent;
+	background-image: url(../img/icn_link.gif);
+	background-repeat: no-repeat;
+	background-position: left center;
+}
+.list-blank-link {
+	background-color: transparent !important;
+	background-image: url(../img/icn_link.gif) !important;
+	background-repeat: no-repeat !important;
+	background-position: left center !important;
+	padding-top: 0px;
+	padding-right: 0px;
+	padding-bottom: 5px;
+	padding-left: 17px;
+}
+.arrow-link {
+	padding: 5px 0px 5px 17px;
+	background-color: transparent;
+	background-image: url(../img/blt_arrow_1.gif);
+	background-repeat: no-repeat;
+	background-position: left center;
+}
+.arrow-link2 {
+	padding: 5px 0px 5px 17px;
+	background-color: transparent;
+	background-image: url(../img/bg_side_menu_1.gif);
+	background-repeat: no-repeat;
+	background-position: left center;
+}
+
+div.icns ul li {
+	margin-bottom:20px;
+}
+.icn-pdf {
+	background-color: transparent;
+	background-image: url(../img/icn_pdf.gif);
+	background-repeat: no-repeat;
+	background-position: right center;
+	padding-right: 25px;
+	padding-top: 5px;
+	padding-bottom: 5px;
+	margin-right: 10px;
+}
+.icn-word {
+	background-color: transparent;
+	background-image: url(../img/icn_doc.gif);
+	background-repeat: no-repeat;
+	background-position: right center;
+	padding-right: 25px;
+	padding-top: 5px;
+	padding-bottom: 5px;
+	margin-right: 10px;
+}
+.icn-excel {
+	background-color: transparent;
+	background-image: url(../img/icn_xls.gif);
+	background-repeat: no-repeat;
+	background-position: right center;
+	padding-right: 25px;
+	padding-top: 5px;
+	padding-bottom: 5px;
+	margin-right: 10px;
+}
+.icn-mp3 {
+	background-color: transparent;
+	background-image: url(../img/icn_music.gif);
+	background-repeat: no-repeat;
+	background-position: right center;
+	padding-right: 25px;
+	padding-top: 5px;
+	padding-bottom: 5px;
+	margin-right: 10px;
+}
+
+.icn-text-important {
+	background-color: #F46060;
+	padding-top: 2px;
+	padding-right: 12px;
+	padding-bottom: 2px;
+	padding-left: 12px;
+	font-size: 11px;
+}
+
+.icn-text-important2 {
+	border-style:solid;
+	border-width:1px;
+	padding:2px 12px;
+	
+	/*padding-top: 2px;
+	padding-right: 12px;
+	padding-bottom: 2px;
+	padding-left: 12px;*/
+	font-size: 12px;
+}
+
+/* ID
+----------------------------------------------- */
+#BlankLink {
+	padding: 5px 0px 5px 17px;
+	background-color: transparent;
+	background-image: url(../img/icn_link.gif);
+	background-repeat: no-repeat;
+	background-position: left center;
+}
+
+/* Table
+----------------------------------------------- */
+div.no-space table td {
+	padding: 0px !important;
+	margin: 0px !important;
+}
+
+.table-0 td{
+	border:none!important;
+	text-align:center;
+}
+.table-1 th{
+	background:none!important;
+	border-top:none!important;
+	border-right:none!important;
+	border-left:none!important;
+	border-bottom:2px solid #1c98d4!important;
+	vertical-align:bottom;
+	font-weight:normal!important;
+}
+.table-1 td{
+	border-top:none!important;
+	border-right:none!important;
+	border-left:none!important;
+	border-bottom:2px solid #CCC!important;
+}
+
+table tr.align-center th {
+	text-align: center;
+}
+table tr .vertical-top {
+	vertical-align: top;
+}
+table tr td.vertical-middle {
+	vertical-align: middle !important;
+}
+table tr th.align-left {
+	text-align: left !important;
+}
+table tr th.centering {
+	vertical-align: middle;
+	text-align: center;
+}
+table tr td.centering {
+	vertical-align: middle;
+	text-align: center;
+}
+table tr th.line-dotted {
+	border-bottom-width: 2px;
+	border-bottom-style: dotted;
+	border-bottom-color: #ccc;
+}
+table tr td.line-dotted {
+	border-bottom-width: 2px !important;
+	border-bottom-style: dotted !important;
+	border-bottom-color: #ccc !important;
+}
+
+/* 枠線のないTable */
+div.no-border table {
+	border-top-width: 0px;
+	border-right-width: 0px;
+	border-bottom-width: 0px;
+	border-left-width: 0px;
+	border-top-style: none;
+	border-right-style: none;
+	border-bottom-style: none;
+	border-left-style: none;
+}
+div.no-border table th {
+	border-top-width: 0px;
+	border-right-width: 0px;
+	border-bottom-width: 0px;
+	border-left-width: 0px;
+	border-top-style: none;
+	border-right-style: none;
+	border-bottom-style: none;
+	border-left-style: none;
+	padding: 3px;
+}
+div.no-border table tr td {
+	border-top-width: 0px;
+	border-right-width: 0px;
+	border-bottom-width: 0px;
+	border-left-width: 0px;
+	border-top-style: none;
+	border-right-style: none;
+	border-bottom-style: none;
+	border-left-style: none;
+	padding: 3px;
+}
+/* 余白のないテーブル（セル） */
+div.no-margin table tr td {
+	margin: 0px;
+	padding: 0px;
+}
+
+/* Table + 単位表記
+----------------------------------------------- */
+/* table の下の位置の場合 */
+.tani {
+	text-align: right;
+	font-size: small;
+}
+/* table の上の位置の場合 */
+.tani-top {
+	text-align: right;
+	font-size: small;
+	margin-bottom: 0px !important;
+}
+
+/* MovieContents
+----------------------------------------------- */
+div.movie {
+	text-align: center;
+	clear: both;
+	margin-right: auto;
+	margin-left: auto;
+}
+div.movie h3 {
+	background-image: none;
+}
+
+/* Error
+----------------------------------------------- */
+#ErrorDoc {
+}
+#ErrorDoc .body {
+}
+#ErrorDoc img {
+	float: left;
+	margin-right: 30px;
+}
+
+/* JavaScript
+----------------------------------------------- */
+/* 角丸装飾用定義 */
+.corner3 {}
+.corner5 {}
+.corner10 {}
+/* このクラスを指定した子要素の高さを揃える */
+.heightLineParent {
+}
+pre.lp-vertical {
+	padding: 0px;
+	border-top-style: none;
+	border-right-style: none;
+	border-bottom-style: none;
+	border-left-style: none;
+}
